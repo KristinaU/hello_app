@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.6.3p62'
+gem 'puma', '~> 3.0'
 #gem 'rails',                '4.2.2'
 gem 'sass-rails',           '5.0.2'
 gem 'uglifier',             '2.5.3'
@@ -14,4 +16,8 @@ group :development, :test do
   gem 'byebug',      '3.4.0'
   gem 'web-console', '2.0.0.beta3'
   gem 'spring',      '1.1.3'
+end
+
+group :production do
+  gem 'pg'
 end
